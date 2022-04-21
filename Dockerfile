@@ -33,7 +33,7 @@ RUN apt-get update && \
 
 # install task-specific packages
 # If you're not running Disco Diffusion, you can and should remove this block and write your own to fetch the libraries and models you need
-RUN pip install sklearn transformers matplotlib && \
+RUN pip install sklearn transformers matplotlib lpips datetime timm ftfy einops pytorch-lightning omegaconf && \
     pip install annoy && \
     mkdir -p /content/models && cd /content/models && \
     wget https://github.com/intel-isl/DPT/releases/download/1_0/dpt_large-midas-2f21e586.pt && \

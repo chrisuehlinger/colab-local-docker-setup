@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/bash -e
 
 # This makes sure we can kill the process if we press Ctrl+C.
 # If Ctrl+C still doesn't work, run this in another terminal window: docker kill "$(docker ps -q)"
